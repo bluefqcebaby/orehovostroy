@@ -381,7 +381,13 @@ h5 {
     margin: 0 auto;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 425px) {
+  .header__menu-btn.close .t-line {
+    -webkit-transform: rotate(45deg) translate(-10px, -16px);
+        -ms-transform: rotate(45deg) translate(-10px, -16px);
+            transform: rotate(45deg) translate(-10px, -16px);
+  }
+
   .header {
     height: 812px;
     background-size: cover;
@@ -392,7 +398,7 @@ h5 {
             justify-content: flex-end;
   }
   .header__menu {
-    position: fixed;
+    height: 812px;
     width: 100%;
     padding: 20px;
   }
@@ -447,6 +453,11 @@ h5 {
     display: unset;
     margin-bottom: 25px;
     margin-top: 30px;
+  }
+}
+@media (max-width: 330px) {
+  .btn-cont {
+    width: 300px;
   }
 }
 @media (max-width: 1440px) {
