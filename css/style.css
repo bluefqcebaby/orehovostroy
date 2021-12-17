@@ -323,6 +323,7 @@ h5 {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  z-index: 4;
 }
 .header__menu-box {
   max-width: 484px;
@@ -382,13 +383,33 @@ h5 {
 }
 @media (max-width: 400px) {
   .header {
-    height: 820px;
+    height: 812px;
     background-size: cover;
   }
   .header__items {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+  }
+  .header__menu {
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+  }
+  .header__menu-box {
+    padding-top: 130px;
+    max-width: 100%;
+    text-align: center;
+  }
+  .header__menu-langs {
+    position: relative;
+    margin-top: 100px;
+  }
+  .header__menu.menu-open {
+    opacity: 1;
+  }
+  .header__title {
+    padding-bottom: 150px;
   }
 
   @-webkit-keyframes bck-motion {
